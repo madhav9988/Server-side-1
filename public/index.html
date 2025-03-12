@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLeaf Organics - Signup/Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .form-container form {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            margin: 0 20px;
+        }
+        .form-container form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-container form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GreenLeaf Organics</h1>
+            <nav>
+                <a href="index.html">Homepage</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login-signup.html">Signup/Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <form action="/signup" method="post">
+            <h2>Signup</h2>
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" required>
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="password" required>
+            <button type="submit">Signup</button>
+        </form>
+
+        <form action="/login" method="post">
+            <h2>Login</h2>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 GreenLeaf Organics</p>
+        </div>
+    </footer>
+</body>
+</html>
